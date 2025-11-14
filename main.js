@@ -343,11 +343,14 @@ function dropTetoro() {
         }
     }
 }
+// 画面をクリックしたら再生開始
 
-// ページが読み込まれたときにBGMを再生する
 window.onload = function() {
-    PlayBgm();
+    document.addEventListener("click", () => {
+        PlayBgm();
+    }, { once: true }); // 1回だけ実行
 };
+
 
 function PlayBgm(){
     const bgm = document.getElementById("bgm");
