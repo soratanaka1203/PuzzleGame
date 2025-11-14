@@ -350,8 +350,8 @@ window.onload = function() {
 };
 
 function PlayBgm(){
-    const bgm = document.getElementById('bgm');
-    bgm.volume = 0.5; // 音量を調整する（0.0から1.0まで）
+    const bgm = document.getElementById("bgm");
+    bgm.volume = 0.7; // 音量を調整する（0.0から1.0まで）
     bgm.play();
 }
 
