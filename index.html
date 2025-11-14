@@ -33,20 +33,6 @@
             display: flex;
         }
 
-        body {
-            display: flex;
-            justify-content: center;   /* 横方向の中央寄せ */
-            align-items: center;       /* 縦方向の中央寄せ */
-            height: 100vh;             /* 画面高さをいっぱい使う */
-            margin: 0;                 /* 余白を消す */
-        }
-
-        .canvas-and-ui {
-            display: flex;
-            gap: 2rem;                 /* canvas と UI の間の余白 */
-        }
-
-
         .colorful span:nth-child(5n+1) { color: red; }
         .colorful span:nth-child(5n+2) { color: blue; }
         .colorful span:nth-child(5n+3) { color: green; }
@@ -60,33 +46,30 @@
     <audio id="lineClearSound" src="Bgm/lineClearSE.mp3"></audio>
     <audio id="moveSound" src="Bgm/MoveSE.mp3"></audio>
     <audio id="gameoverSound" src="Bgm/GameOverSE.mp3"></audio>
-    <section class="canvas-and-ui">
-        <canvas id="can"></canvas>
-        <div>
-            <h1 class="colorful">BlockPuzzle</h1>
-            <h2>操作方法</h2>
-            <div class="display_flex">
-                <h3>左:A</h3>
-                <h3>下:S</h3>
-                <h3>右:D</h3>
-                <h3>ドロップ:w</h3>
-                <h3>左回転:j</h3>
-                <h3>右回転:K</h3>
-            </div>
-            <h1>スコア</h1>
-            <h2 id="score">0000000</h2>
-            <h1>ハイスコア</h1>
-            <h2 id="hi_score">0000000</h2>
-            <div class="display_flex">
-                <h2>BGM</h2><a href="https://pixabay.com/ja/music/tetris-theme-korobeiniki-arranged-for-piano-186249/"><p>https://pixabay.com/ja/music/tetris-theme-korobeiniki-arranged-for-piano-186249/</p></a>
-            </div>
-            <div class="display_flex">
-                <h2>効果音</h2>
-                <a href="https://soundeffect-lab.info/sound/button/"><p>効果音ラボ</p></a>
-            </div>
+    <canvas id="can"></canvas>
+    <div>
+        <h1 class="colorful">BlockPuzzle</h1>
+        <h2>操作方法</h2>
+        <div class="display_flex">
+            <h3>左:A</h3>
+            <h3>下:S</h3>
+            <h3>右:D</h3>
+            <h3>ドロップ:w</h3>
+            <h3>左回転:j</h3>
+            <h3>右回転:K</h3>
         </div>
-    </section>
-    
-    
+        <h1>スコア</h1>
+        <h2 id="score">0000000</h2>
+        <h1>ハイスコア</h1>
+        <h2 id="hi_score">0000000</h2>
+        <div class="display_flex">
+            <h2>BGM</h2><a href="https://pixabay.com/ja/music/tetris-theme-korobeiniki-arranged-for-piano-186249/"><p>https://pixabay.com/ja/music/tetris-theme-korobeiniki-arranged-for-piano-186249/</p></a>
+        </div>
+        <div class="display_flex">
+            <h2>効果音</h2>
+            <a href="https://soundeffect-lab.info/sound/button/"><p>効果音ラボ</p></a>
+        </div>
+        
+    </div>
 </body>
 </html>
